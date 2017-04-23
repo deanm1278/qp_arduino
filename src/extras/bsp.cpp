@@ -1,7 +1,4 @@
 ///***************************************************************************
-// Product: DPP example, STM32 NUCLEO-L152RE board, preemptive QK kernel
-// Last updated for version 5.6.5
-// Last updated on  2016-07-05
 //
 //                    Q u a n t u m     L e a P s
 //                    ---------------------------
