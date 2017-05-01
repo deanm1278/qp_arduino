@@ -84,6 +84,9 @@ void QF::onStartup(void) {
     // assigning all priority bits for preemption-prio. and none to sub-prio.
     //NVIC_SetPriorityGrouping(0U);
 	
+	//PendSV must be highest priority or it will preempt other interrupts
+	NVIC_SetPriority(PendSV_IRQn, 0xFF);
+	
 	SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
 	NVIC_SetPriority(SysTick_IRQn, SYSTICK_PRIO);
     
